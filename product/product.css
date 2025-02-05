@@ -4,7 +4,6 @@ body {
     
 }
     
-/* Header */
 header {        
     background-color: #6200EE;
     color: #FFFFFF;
@@ -97,7 +96,6 @@ button {
 
 
 
-/* Responsive design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;

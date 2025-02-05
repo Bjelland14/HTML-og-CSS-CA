@@ -4,7 +4,6 @@ body {
     
 }
     
-/* Header */
 header {        
     background-color: #6200EE;
     color: #FFFFFF;
@@ -66,9 +65,8 @@ main {
 }
 
 .contact-form h2{
-    display: flex;
-    justify-content: center;
     text-align: center;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -99,7 +97,6 @@ footer {
     text-align: center;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
