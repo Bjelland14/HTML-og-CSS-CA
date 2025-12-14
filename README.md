@@ -1,4 +1,4 @@
-# RainyDyas
+# RainyDays
 
 RainyDays is a responsive e-commerce website for a fictional rain jacket brand.
 The project was createdd as a cross-course assignment in the Front-End Development program.
