@@ -1,10 +1,10 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    
+    padding-bottom: 60px;
 }
-    
-header {        
+
+header {
     background-color: #6200EE;
     color: #FFFFFF;
     padding: 0.5rem 2rem;
@@ -12,28 +12,28 @@ header {
     flex-direction: column;
     text-align: center;
     gap: 0.5rem;
-
-    }
-
-    .logo-container img {
-        max-height: 3.5rem;
-        
-    }
-
-    nav {
-        display: flex ;
-        justify-content: center;
-        gap: 1rem; 
-    }
-
- 
-main {
-    padding: 1rem 1rem;
-    margin: 0 2rem 0 2rem;
-
 }
 
-.info-section{
+header .logo-container img {
+    max-height: 3.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main {
+    padding: 1rem;
+    margin: 0 2rem;
+    box-sizing: border-box;
+}
+
+.info-section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -42,30 +42,31 @@ main {
     gap: 2rem;
 }
 
-.contact-info{
+.contact-info {
     flex: 1;
     max-width: 300px;
     text-align: left;
     font-weight: 600;
 }
 
-.faq{
-    flex:1;
+.faq {
+    flex: 1;
     max-width: 20rem;
     font-weight: 600;
     text-align: center;
 }
-.contact-form{
-    max-width: 600px;
+
+.contact-form {
+    max-width: 400px;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-.contact-form h2{
+.contact-form h2 {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 0 0.5rem 0;
+    text-align: center;
 }
 
 .contact-form form {
@@ -73,34 +74,59 @@ main {
     flex-direction: column;
     max-width: 20rem;
     font-weight: 600;
+    margin: 0 auto;
 }
-
-
-button {
-    background-color: #2B3549;
-    color: #FFFFFF;
-    border-radius: .375rem;
-    padding: 0.25rem 1rem;
-    border: none;
-}
-
 
 footer {
     background-color: #6200EE;
     color: #FFFFFF;
     padding: 0.5rem 1rem;
-    position:fixed;
+    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
+    box-sizing: border-box;
+}
+
+footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    background-color: #2B3549;
+    color: #FFFFFF;
+    border-radius: 0.375rem;
+    padding: 0.25rem 1rem;
+    border: none;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
-    nav ul {
+    header nav ul,
+    footer nav ul {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem auto;
+    }
+
+    .contact-info,
+    .faq {
+        max-width: 100%;
+        text-align: center;
     }
 
     main {
+        margin: 0;
         padding: 10px;
     }
 }
