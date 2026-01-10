@@ -15,6 +15,5 @@ The project was createdd as a cross-course assignment in the Front-End Developme
 
 ## Live Site
 https://bjelland14.github.io/HTML-og-CSS-CA/
-
 ## GitHub Repository
 https://github.com/Bjelland14/HTML-og-CSS-CA
